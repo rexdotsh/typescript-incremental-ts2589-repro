@@ -28,3 +28,7 @@ npm run typecheck
 ```
 
 This fresh check passes. The repro uses TypeScript 7.0.2 and `--checkers 1`; it has no application or third-party type dependencies. `Json` and `Parsed<T>` represent the recursive JSON type and JSON response type that exposed the issue in a larger project.
+
+## Version comparison
+
+The same source and `tsconfig.json` were checked with TypeScript 6.0.3 (invoking `tsc -p tsconfig.json` directly, since `--checkers` is a TypeScript 7 option): cold, edited incremental, and edited fresh checks **all passed**. With TypeScript 7.0.2, the results were pass, locationless TS2589, and pass, respectively.
