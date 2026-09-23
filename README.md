@@ -32,3 +32,5 @@ This fresh check passes. The repro uses TypeScript 7.0.2 and `--checkers 1`; it 
 ## Version comparison
 
 The same source and `tsconfig.json` were checked with TypeScript 6.0.3 (invoking `tsc -p tsconfig.json` directly, since `--checkers` is a TypeScript 7 option): cold, edited incremental, and edited fresh checks **all passed**. With TypeScript 7.0.2, the results were pass, locationless TS2589, and pass, respectively.
+
+The `typescript@next` nightly, **7.1.0-dev.20260922.1**, was also checked with the same `--checkers 1` script: cold pass, locationless TS2589 on the comment-only incremental run, fresh pass. The nightly has not fixed the issue as of this version.
