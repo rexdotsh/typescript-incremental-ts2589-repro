@@ -1,0 +1,11 @@
+{
+  "name": "typescript-incremental-ts2589-repro",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --checkers 1"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

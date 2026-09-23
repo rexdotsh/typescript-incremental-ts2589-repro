@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+    "target": "ESNext",
+    "module": "ESNext",
+    "types": []
+  },
+  "files": ["repro.ts"]
+}
